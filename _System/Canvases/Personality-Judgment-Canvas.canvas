@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"personality-judgment-framework","type":"text","text":"# Personality Judgment Framework\n\nStructured method for analyzing communication patterns and personality traits","x":100,"y":50,"width":300,"height":80,"color":"5"},
+		{"id":"analysis-chain","type":"text","text":"Core Analysis Chain:\nRaw message → Observable feature → Pattern → Context → Hypothesis → Confidence → Evidence","x":100,"y":180,"width":400,"height":60,"color":"4"},
+		{"id":"subject-profile","type":"text","text":"1. Subject Profile\n• ID/name, period, platform\n• Message/conversation counts\n• Participants, data quality\n• Missing periods, context","x":50,"y":300,"width":200,"height":100,"color":"1"},
+		{"id":"communication-style","type":"text","text":"2. Communication Style\n• Formal/Casual/Friendly/Neutral\n• Assertive/Defensive/Sarcastic\n• Humorous/Emotional/Technical\n• Reserved styles","x":300,"y":300,"width":200,"height":100,"color":"1"},
+		{"id":"language-pattern","type":"text","text":"3. Language Pattern\n• Vocabulary: frequent/rare words\n• Slang, technical terms, fillers\n• Sentence style: short/med/long\n• Grammar: person, voice, hedging","x":550,"y":300,"width":200,"height":100,"color":"1"},
+		{"id":"repetition","type":"text","text":"4. Repetition\n• Event, complaint, explanation\n• Person, topic, justification\n• What need does repetition serve?","x":800,"y":300,"width":200,"height":100,"color":"1"},
+		{"id":"response-behavior","type":"text","text":"5. Response Behavior\n• Work/Technical/Casual\n• Conflict/Personal focus\n• Category distribution %","x":50,"y":450,"width":200,"height":100,"color":"5"},
+		{"id":"conversation-dynamics","type":"text","text":"6. Conversation Dynamics\n• Initiation: who starts, how often\n• Topic control: introducer/changer/ender\n• Question behavior: asked/answered/ignored/redirected","x":300,"y":450,"width":200,"height":100,"color":"5"},
+		{"id":"conflict-analysis","type":"text","text":"7. Conflict & Disagreement\n• Before/During/After phases\n• Defensiveness, explanation, counterargument\n• Topic shifting, silence, repetition\n• Apology, negotiation, escalation","x":550,"y":450,"width":200,"height":100,"color":"5"},
+		{"id":"topic-behavior","type":"text","text":"8. Topic Behavior\n• Frequency, message count, avg length\n• Response time, emotional language\n• Initiation, avoidance/change, recurrence","x":800,"y":450,"width":200,"height":100,"color":"5"},
+		{"id":"baseline-change","type":"text","text":"9. Baseline vs Change\n• Establish normal behavior\n• Detect deviations from baseline\n• Style shifts, topic anomalies\n• Timing alterations, volume changes","x":50,"y":600,"width":250,"height":100,"color":"3"},
+		{"id":"anomaly-detection","type":"text","text":"10. Anomaly Detection\n• Monitor: tone, vocabulary, length\n• Response time, emoji, topic\n• Question frequency, initiation\n• Activity hours, formality, repetition","x":350,"y":600,"width":250,"height":100,"color":"3"},
+		{"id":"context-node","type":"text","text":"11. Context Node\n• Temporal: time, day, events\n• Relational: who, history, power\n• Environmental: setting, stressors\n• Developmental: stage, skills, healing\n• Cultural: norms, expectations, scripts\n• Situational: goals, pressures, opportunities\n\n\"Same behavior, different meaning in different context\"","x":650,"y":600,"width":250,"height":140,"color":"3"},
+		{"id":"hypothesis-layer","type":"text","text":"12. Hypothesis Layer\nFor each pattern:\nObservation → Observable Feature → Pattern\n→ Context → Hypothesis → Confidence → Evidence\n\nConfidence: High/Medium/Low/Very Low\nWith justification and supporting/contradicting evidence","x":50,"y":780,"width":700,"height":120,"color":"6"},
+		{"id":"template-link","type":"text","text":"📄 **Use Template:**\n[[Templates/Personality-Judgment-Analysis|Personality-Judgment-Analysis]]\n\n📊 **View Dashboard:**\n[[Templates/Personality-Judgment-Dashboard|Personality-Judgment-Dashboard]]\n\n📖 **Read Framework:**\n[[Skills-Notes/Personality-Judgment-Framework|Personality-Judgment-Framework]]","x":800,"y":780,"width":250,"height":120,"color":"4"}
+	],
+	"edges":[
+		{"id":"edge1","fromNode":"personality-judgment-framework","fromSide":"bottom","toNode":"analysis-chain","toSide":"top"},
+		{"id":"edge2","fromNode":"analysis-chain","fromSide":"bottom","toNode":"subject-profile","toSide":"top"},
+		{"id":"edge3","fromNode":"analysis-chain","fromSide":"bottom","toNode":"communication-style","toSide":"top"},
+		{"id":"edge4","fromNode":"analysis-chain","fromSide":"bottom","toNode":"language-pattern","toSide":"top"},
+		{"id":"edge5","fromNode":"analysis-chain","fromSide":"bottom","toNode":"repetition","toSide":"top"},
+		{"id":"edge6","fromNode":"analysis-chain","fromSide":"bottom","toNode":"response-behavior","toSide":"top"},
+		{"id":"edge7","fromNode":"analysis-chain","fromSide":"bottom","toNode":"conversation-dynamics","toSide":"top"},
+		{"id":"edge8","fromNode":"analysis-chain","fromSide":"bottom","toNode":"conflict-analysis","toSide":"top"},
+		{"id":"edge9","fromNode":"analysis-chain","fromSide":"bottom","toNode":"topic-behavior","toSide":"top"},
+		{"id":"edge10","fromNode":"analysis-chain","fromSide":"bottom","toNode":"baseline-change","toSide":"top"},
+		{"id":"edge11","fromNode":"analysis-chain","fromSide":"bottom","toNode":"anomaly-detection","toSide":"top"},
+		{"id":"edge12","fromNode":"analysis-chain","fromSide":"bottom","toNode":"context-node","toSide":"top"},
+		{"id":"edge13","fromNode":"analysis-chain","fromSide":"bottom","toNode":"hypothesis-layer","toSide":"top"},
+		{"id":"edge14","fromNode":"hypothesis-layer","fromSide":"right","toNode":"template-link","toSide":"left"}
+	]
+}
